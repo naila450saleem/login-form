@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proton Mail: Sign-in</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
+</head>
+<body>
+    <header>
+<div class="logo-wrapper">
+  <!-- Icon -->
+  <img src="logo3.svg" alt="Logo Icon" class="logo-icon">
+    <img src="logo1.svg" alt="Logo Icon" class="logo-icon">
+      <img src="logo2.svg" alt="Logo Icon" class="logo-icon">
+</div>
+
+
+        <div class="language-dropdown">
+  <button class="dropdown-toggle">
+    🌐 English <span class="arrow">▼</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><button type="button" lang="en">English</button></li>
+    <li><button type="button" lang="de">Deutsch</button></li>
+    <li><button type="button" lang="fr">Français</button></li>
+    <li><button type="button" lang="nl">Nederlands</button></li>
+    <li><button type="button" lang="es">Español (España)</button></li>
+    <li><button type="button" lang="es">Español (Latinoamérica)</button></li>
+    <li><button type="button" lang="it">Italiano</button></li>
+    <li><button type="button" lang="pl">Polski</button></li>
+    <li><button type="button" lang="pt">Português (Brasil)</button></li>
+    <li><button type="button" lang="ru">Русский</button></li>
+    <li><button type="button" lang="tr">Türkçe</button></li>
+    <li><button type="button" lang="ca">Català</button></li>
+    <li><button type="button" lang="cs">Čeština</button></li>
+    <li><button type="button" lang="da">Dansk</button></li>
+    <li><button type="button" lang="fi">Suomi</button></li>
+    <li><button type="button" lang="hr">Hrvatski</button></li>
+    <li><button type="button" lang="hu">Magyar</button></li>
+    <li><button type="button" lang="id">Bahasa Indonesia</button></li>
+    <li><button type="button" lang="kab">Taqbaylit</button></li>
+    <li><button type="button" lang="nb">Norsk bokmål</button></li>
+    <li><button type="button" lang="pt">Português (Portugal)</button></li>
+    <li><button type="button" lang="ro">Română</button></li>
+    <li><button type="button" lang="sk">Slovenčina</button></li>
+    <li><button type="button" lang="sl">Slovenščina</button></li>
+    <li><button type="button" lang="sv">Svenska</button></li>
+    <li><button type="button" lang="el">Ελληνικά</button></li>
+    <li><button type="button" lang="be">Беларуская</button></li>
+    <li><button type="button" lang="uk">Українська</button></li>
+    <li><button type="button" lang="ka">ქართული</button></li>
+    <li><button type="button" lang="hi">हिन्दी (भारत)</button></li>
+    <li><button type="button" lang="ko">한국어</button></li>
+    <li><button type="button" lang="ja">日本語</button></li>
+    <li><button type="button" lang="zh">简体中文</button></li>
+    <li><button type="button" lang="zh">繁體中文</button></li>
+  </ul>
+</div>
+
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <h1>Sign in</h1>
+            <h2>To continue to Proton Mail</h2>
+            
+            <form>
+                <div class="form-group">
+                    <label for="email">Email or username</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+  <div class="form-group password-wrapper">
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+  <!-- <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i> -->
+</div>
+
+
+                
+                <div class="checkbox-group">
+                    <div class="checkbox-line">
+                        <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
+                        <label for="keep-signed-in">Keep me signed in</label>
+                    </div>
+                    <div class="note-line">
+                        <span class="note">Recommended on trusted devices.</span>
+                        <a href="#" class="why-link">Why?</a>
+                    </div>
+                </div>
+                
+                <button type="submit" class="signin-button">Sign in</button>
+            </form>
+            
+            <div class="create-account">
+                <span>New to Proton? </span>
+                <a href="#" class="create-link">Create account</a>
+            </div>
+            
+            <div class="trouble-signin">
+                <a href="#" class="trouble-link">Trouble signing in?</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-icons">
+            <img src="icon1.png" alt="">
+            <img src="icon2.png" alt="">
+            <img src="icon3.png" alt="">
+            <img src="icon4.png" alt="">
+            <img src="icon5.png" alt="">
+        </div>
+        <p class="footer-text">Proton. Privacy by default.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy policy</a>
+        </div>
+        <a href="#" class="help-link">Help</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
