@@ -314,7 +314,6 @@ input[type="checkbox"] {
   width: 42px;
   height: 42px;
   object-fit: contain; /* distort na ho */
-
   transition: transform 0.2s ease, opacity 0.2s ease;
   cursor: pointer;
 }
@@ -379,3 +378,101 @@ input[type="checkbox"] {
   color: #0066ff;
   text-decoration: underline;  /* hamesha line dikhayega */
 }
+
+/* ========== Responsive Styles ========== */
+
+/* Tablets aur chhoti screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .login-container {
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: flex;
+    gap:2px;
+    margin-top: 5%;
+  }
+
+  .dropdown-toggle {
+    min-width: auto;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .signin-button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .footer-text {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+    gap: 5px;
+  }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .signin-button {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
