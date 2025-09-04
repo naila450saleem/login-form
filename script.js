@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // ======================
   // Dropdown toggle
+  // ======================
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownMenu = document.querySelector(".dropdown-menu");
 
@@ -15,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // ======================
   // Form validation
+  // ======================
   const form = document.querySelector('form');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -32,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
     alert('Login successful! (This is a demo)');
   });
 
-  // Language selection (dropdown items)
+  // ======================
+  // Language selection
+  // ======================
   const languageButtons = document.querySelectorAll('.dropdown-menu button');
   languageButtons.forEach(btn => {
     btn.addEventListener('click', function () {
@@ -42,17 +48,31 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Language changed to: ' + selectedLang);
     });
   });
-});
 
-function togglePassword() {
+  // ======================
+  // Eye toggle (password visibility)
+  // ======================
+  const togglePassword = document.getElementById("togglePassword");
   const passwordInput = document.getElementById("password");
-  const toggleIcon = document.querySelector(".toggle-password");
 
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    toggleIcon.textContent = "🙈"; // Eye slash jab show ho
-  } else {
-    passwordInput.type = "password";
-    toggleIcon.textContent = "👁"; // Normal eye
+  if (togglePassword && passwordInput) {
+    // Ek hi eye icon inject karo
+    const eyeIcon = document.createElement("i");
+    eyeIcon.classList.add("fa-solid", "fa-eye");
+    togglePassword.appendChild(eyeIcon);
+
+    togglePassword.addEventListener("click", function () {
+      const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+      passwordInput.setAttribute("type", type);
+
+      // Eye ↔ Eye-slash toggle
+      if (type === "password") {
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      } else {
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      }
+    });
   }
-}
+});

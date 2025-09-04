@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proton Mail: Sign-in</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 
     <!-- Favicons -->
@@ -77,11 +78,16 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 
-  <div class="form-group password-wrapper">
+ <div class="form-group password-wrapper">
   <label for="password">Password</label>
-  <input type="password" id="password" name="password" required>
-  <!-- <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i> -->
+  <div class="password-field">
+    <input type="password" id="password" name="password" required>
+    <span class="toggle-password" id="togglePassword"></span>
+  </div>
 </div>
+
+
+
 
 
                 
@@ -110,21 +116,25 @@
         </div>
     </main>
     
-    <footer>
-        <div class="footer-icons">
-            <img src="icon1.png" alt="">
-            <img src="icon2.png" alt="">
-            <img src="icon3.png" alt="">
-            <img src="icon4.png" alt="">
-            <img src="icon5.png" alt="">
-        </div>
-        <p class="footer-text">Proton. Privacy by default.</p>
-        <div class="footer-links">
-            <a href="#" class="footer-link">Terms</a>
-            <a href="#" class="footer-link">Privacy policy</a>
-        </div>
-        <a href="#" class="help-link">Help</a>
-    </footer>
+    <footer class="footer">
+<div class="footer-logo">
+  <img src="mail.png" alt="Proton Mail" class="logo-icon" title="Proton Mail">
+  <img src="tcal.jpeg" alt="Proton Calendar" class="logo-icon" title="Proton Calendar">
+  <img src="dri.jpeg" alt="Proton Drive" class="logo-icon" title="Proton Drive">
+  <img src="vpn.jpeg" alt="Proton VPN" class="logo-icon" title="Proton VPN">
+  <img src="pass.jpeg" alt="Proton Pass" class="logo-icon" title="Proton Pass">
+  <img src="wall.jpeg" alt="Proton Wallet" class="logo-icon" title="Proton Wallet">
+</div>
+  <p class="footer-text">Proton. Privacy by default.</p>
+  <div class="footer-links">
+    <a href="#" class="footer-link">Terms</a> |
+    <a href="#" class="footer-link">Privacy policy</a> |
+    <span class="footer-version">Version 5.0.283.1</span>
+  </div>
+
+  <a href="#" class="help-link">Help</a>
+</footer>
+
 
     <script src="script.js"></script>
 </body>
